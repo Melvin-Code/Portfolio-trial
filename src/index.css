@@ -1,0 +1,1107 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+:root {
+  --main-bk-color: #10052b80;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+input:focus {
+  outline: none;
+}
+html {
+  font-size: 10px;
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2.2rem;
+}
+::-moz-selection {
+  background-color: rgb(39, 1, 78);
+  color: white;
+}
+
+::selection {
+  background-color: rgb(39, 1, 78);
+  color: white;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgb(51, 28, 76)
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(51, 28, 76)
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgb(39, 1, 78);
+}
+
+/*////////////////////Questions////////////////////////////*/
+/*////////////////////Questions////////////////////////////*/
+/*////////////////////Questions////////////////////////////*/
+
+.question {
+  border: 1px solid;
+  border-color: cyan;
+  background-color: darkcyan;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*////////////////////Questions////////////////////////////*/
+/*////////////////////Questions////////////////////////////*/
+/*////////////////////Questions////////////////////////////*/
+
+/*////////////////////NavBar////////////////////////////*/
+/*////////////////////NavBar////////////////////////////*/
+/*////////////////////NavBar////////////////////////////*/
+.navbar {
+  position: relative;
+  display: flex;
+  /* background-image: linear-gradient(to bottom right, darkblue, purple); */
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  /* box-shadow: -6px -4px 13px 0px black; */
+  
+  z-index: 30;
+  width: 100vw;
+}
+.navbar .navbar-box {
+  /* position: absolute; */
+  /* right: 0; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  margin-right: 1.5rem;
+}
+.navbar .navbar-box #nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  transition: .5s;
+  width: auto;
+  background-color: transparent;
+  border: none;
+  margin: 0 1rem 0 1rem;
+}
+.navbar .fly-logo-container{
+  width: 26rem;
+  height: 10rem;
+}
+.navbar .Fly-logo-box {
+  position: absolute;
+  /* top: 1rem; */
+  left: 5%;
+  display: flex;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  width: 26rem;
+  height: 10rem;
+  animation-name: Flying;
+  animation-duration: 2s;
+}
+
+.navbar .Fly-logo-box .logo {
+  width: 12rem;
+  transition: .5s;
+  animation-name: FlyingLogo;
+  animation-duration: 2s;
+}
+
+.navbar .Fly-logo-box .co-name {
+  display: flex;
+  flex-direction: column;
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  transition: .5s
+}
+.navbar .Fly-logo-box .co-name .co-name-dwn {
+  transform: translateY(-17%);
+}
+
+/*////////////////////NavBar////////////////////////////*/
+/*////////////////////NavBar////////////////////////////*/
+/*////////////////////NavBar////////////////////////////*/
+
+/*////////////////////Landing page////////////////////////////*/
+/*////////////////////Landing page////////////////////////////*/
+/*////////////////////Landing page////////////////////////////*/
+.lan-page {
+  height: 85vh;
+  width: 100vw;
+  position: relative;
+}
+
+.lan-page .learn-mor-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: magicText;
+  animation-duration: 2s;
+  background-color: var(--main-bk-color);
+  width: 62rem;
+  height: 32rem;
+  overflow: hidden;
+  padding: 2rem;
+  box-shadow: 1px 1px 6px 0px #000000;
+  /* transition: 2s; */
+}
+/* .lan-page .learn-mor-box:hover{
+  width: 62rem;
+  
+} */
+.learn-mor-box .intro-text {
+  color: white;
+  font-size: 5rem;
+  font-weight: bolder;
+  width: auto;
+}
+.learn-mor-box .intro-text .sub-text {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 3rem 0;
+  display: block;
+}
+
+/*////////////////////Landing page////////////////////////////*/
+/*////////////////////Landing page////////////////////////////*/
+/*////////////////////Landing page////////////////////////////*/
+
+/*////////////////////Animations////////////////////////////*/
+/*////////////////////Animations////////////////////////////*/
+/*////////////////////Animations////////////////////////////*/
+@keyframes magicText {
+  0% {
+    top: 84%;
+    width: 0;
+    height: 5rem;
+    box-shadow: none;
+  }
+  8.6% {
+    top: 84%;
+    width: 0;
+    height: 5rem;
+  }
+  40% {
+    top: 84%;
+    width: 62rem;
+    height: 5rem;
+    box-shadow: none;
+  }
+  60% {
+    top: 84%;
+    width: 62rem;
+    height: 5rem;
+    box-shadow: none;
+  }
+  100% {
+    top: 50%;
+    height: 32rem;
+  }
+}
+
+@keyframes Flying {
+  0% {
+    top: 62rem;
+    left: 110%;
+    height: 15rem;
+    width: 13rem;
+    /* transform: rotate(90deg); */
+  }
+  40% {
+    left: 5%;
+    top: 62rem;
+    height: 15rem;
+    width: 13rem;
+    /* transform: rotate(0deg); */
+  }
+  60% {
+    left: 5%;
+    top: 62rem;
+    height: 15rem;
+    width: 13rem;
+    /* transform: rotate(0deg); */
+  }
+  70% {
+    width: 13rem;
+  }
+  90% {
+    top: 1.4rem;
+    width: 13rem;
+  }
+  100% {
+    width: 31rem;
+    /* transform: rotate(0deg); */
+  }
+}
+
+@keyframes FlyingLogo {
+  0% {
+    transform: rotate(-90deg);
+  }
+  40% {
+    transform: rotate(-90deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*////////////////////Animations////////////////////////////*/
+/*////////////////////Animations////////////////////////////*/
+/*////////////////////Animations////////////////////////////*/
+
+/*////////////////////Contact Page////////////////////////////*/
+/*////////////////////Contact Page////////////////////////////*/
+/*////////////////////Contact Page////////////////////////////*/
+.contact-page{
+  position: relative;
+  width: 100vw;
+  height: 85vh;
+}
+.contact-box {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--main-bk-color);
+  padding: 2rem;
+  width: 80rem;
+  clip-path: circle(100%);
+  animation: MagicCircle;
+  animation-duration: 1.5s;
+  overflow: hidden;
+  transition: .2s;
+}
+@keyframes MagicCircle {
+  0%{
+    left: 150%;
+    clip-path: circle(5% )
+  }
+  40%{
+    left: 47%;
+    clip-path: circle(5.0%)
+  }
+  50%{
+    left: 50%;
+    clip-path: circle(5.0%)
+  }
+  100%{
+    clip-path: circle(100%);
+  }
+}
+.contact-box .setter{
+  position: relative;
+}
+.contact-box .setter .form-text-box {
+  position: relative;
+}
+.contact-box .setter .form-text-box .form-text-main {
+  font-size: 5rem;
+}
+.contact-box .setter .form-text-box .form-text-sub {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 1rem 0 12rem 0;
+}
+.contact-box .setter .form-box {
+  position: relative;
+}
+.contact-box .setter .form-box .input-box {
+  position: relative;
+  display: none;
+  margin: 6rem 0 2rem;
+}
+.contact-box .setter .form-box .input-box .form-in {
+  padding-left: 2.7rem;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  border-bottom: 2px dashed white;
+  background-color: transparent;
+  height: 2.5rem;
+ 
+}
+#input-icon {
+  position: absolute;
+  bottom: 15%;
+    left: .3rem;
+  
+}
+.contact-box .setter .form-box .prWords-holder {
+  /* margin-top: 3rem; */
+  position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: -10rem;
+}
+.contact-box .setter .form-box .prWords-holder .prWords-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+.contact-box .setter .form-box .prWords-holder .prWords-box .preWords-container {
+  background-color: rgba(255, 255, 255, 0.301);
+  margin-right: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+@keyframes contactIcon{
+  0%{
+    width: 0;
+    height: 2.4rem;
+    /* position: absolute;
+    right: 0; */
+    /* border-radius: 50%; */
+  }
+  /* 50%{
+    width: 2rem;
+    height: 2.4rem; */
+    /* position: absolute;
+    right: 0; */
+    /* border-radius: 50%; */
+  /* } */
+  100%{
+    width: 19rem;
+    height: 2.4rem;
+  }
+
+}
+@keyframes contactIcon3{
+  0%{
+    width: 0;
+    height: 2.4rem;
+    /* position: absolute;
+    right:  */
+    /* border-radius: 50%; */
+  }
+  /* 50%{ */
+    /* width: 2rem;
+    height: 2.4rem; */
+    /* position: absolute;
+    right: 0; */
+    /* border-radius: 50%; */
+  /* } */
+  100%{
+    width: 25rem;
+    height: 2.4rem;
+  }
+
+}
+.contact-box .setter
+  .form-box
+  .prWords-holder
+  .prWords-box
+  .preWords-container
+  .pw-wording {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding: 2.5px 7px;
+  overflow: hidden;
+  cursor: pointer;
+  animation-name: contactIcon;
+  animation-duration: .5s;
+  
+}
+.contact-box .setter
+  .form-box
+  .prWords-holder
+  .prWords-box
+  .preWords-container
+  #pw-wording3 {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding: 2.5px 7px;
+  overflow: hidden;
+  
+  animation-name: contactIcon3;
+  animation-duration: .5s;
+  
+}
+.contact-box .setter
+  .form-box
+  .prWords-holder
+  .prWords-box
+  .preWords-container
+  .pw-wording
+  > p{
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-left: .5rem;
+  overflow: hidden;
+  /* width: 18rem; */
+  height: 2.4rem;
+  /* animation-name: contactIcon;
+  animation-duration: 2s;
+  overflow: hidden; */
+}
+.contact-box .setter
+  .form-box
+  .prWords-holder
+  .prWords-box
+  .preWords-container
+  .pw-wording
+  > i{
+    height: 2rem;
+  }
+#display-1,
+#display-2,
+#display-3 {
+  display: block;
+}
+.contact-box .setter .social-box .social-main {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+.contact-box .setter .social-box .social-sub {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 1rem 0;
+}
+
+/*////////////////////Contact Page////////////////////////////*/
+/*////////////////////Contact Page////////////////////////////*/
+/*////////////////////Contact Page////////////////////////////*/
+
+/*////////////////////About Page////////////////////////////*/
+/*////////////////////About Page////////////////////////////*/
+/*////////////////////About Page////////////////////////////*/
+.about-page{
+  width: 100vw;
+  height: 85vh;
+  position: relative;
+}
+.about-page .about-page-holder1{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* display: none; */
+  transform: translate(-50%, -50%);
+  /* background-color: ; */
+  overflow: visible;
+  width: 90rem;
+  height: 43rem;
+}
+.about-page .about-page-holder1 #about-setter{
+  width: auto;
+    height: auto;
+}
+.about-page .about-page-holder1 .left-half{
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  width: 55.3%;
+  height: 40rem;
+  background-color: var(--main-bk-color);
+  padding: 1.5rem;
+  position: absolute;
+  left: 0;
+  
+  animation-name: fromLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+.about-page .about-page-holder1 .left-half .title-holder, .about-page .about-page-holder1 .rigth-half .title-holder{
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-bottom: 2.5rem;
+  height: fit-content;
+  
+}
+.about-page .about-page-holder1 .left-half .box-text-content{
+  font-size: 2rem;
+  text-align: left;
+  font-weight: bolder;
+  line-height: 1.4;
+  margin-top: 4.8rem;
+  
+}
+@keyframes fromLeft{
+  0%{
+    left: -75rem;
+    display: block;
+  }
+  100%{
+    display: block;
+  }
+  }
+  @keyframes fromRigth{
+    0%{
+      right: -75rem;
+      display: block;
+    }
+    100%{
+      display: block;
+    }
+    }
+  .about-page .about-page-holder1 .rigth-half{
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: var(--main-bk-color);
+    width: 55.3%;
+    height: 40rem;
+    padding: 1.5rem;
+    position: absolute;
+    right: 0;
+    animation-name: fromRigth;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  }
+  .about-page .about-page-holder1 .rigth-half .title-holder{
+    padding-left: 8rem;
+  }
+  .about-page .about-page-holder1 .rigth-half .box-text-sub .icon-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .about-page .about-page-holder1 .rigth-half .box-text-sub .icon-container .skill-box .icon-box > div{
+    width: 3.5rem;
+    /* height: 3.5rem; */
+    /* margin: 2rem 0; */
+  }
+  .about-page .about-page-holder1 .rigth-half .box-text-sub .icon-container .skill-box .icon-box #svg-icon{
+    height: 3.5rem;
+    position: relative;
+  }
+  .about-page .about-page-holder1 .rigth-half .box-text-sub .icon-container .skill-box .icon-box > div > svg{
+    width: 3.5rem;
+  }
+  .about-page .about-page-holder1 .rigth-half .box-text-sub .icon-container .skill-box .icon-box > div > i{
+    font-size: 3.5rem;
+  }
+  .about-page .about-page-holder1 .rigth-half .box-text-sub .icon-container .skill-box > p{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 1rem;
+  }
+  .about-page .about-page-holder1 .rigth-half .box-text-sub .icon-container .skill-box .MD{
+    margin-left: 0;
+  }
+  .about-page .about-page-holder1 .rigth-half .box-text-sub .icon-container .skill-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
+  .about-page .about-page-holder1 .rigth-half .box-text-sub{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 28rem;
+
+  }
+
+
+/*////////////////////About Page////////////////////////////*/
+/*////////////////////About Page////////////////////////////*/
+/*////////////////////About Page////////////////////////////*/
+/*////////////////////work Page////////////////////////////*/
+/*////////////////////work Page////////////////////////////*/
+/*////////////////////work Page////////////////////////////*/
+.work-page{
+  width: 100vw;
+  height:85vh;
+  position: relative;
+}
+.work-page .work-card-container{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90vw;
+  display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.work-page .work-card-container .work-card{
+  width: 30rem;
+  height: 45rem;
+  margin: 0 1.5rem 10rem 1.5rem;
+  position: relative;
+}
+.work-page .work-card-container .work-card .wc-up-shadow{
+  height: 45%;
+  filter: drop-shadow(0px 5px 0px rgb(146, 144, 144));
+}
+.work-page .work-card-container .work-card .wc-up-sec{
+  background-color: white;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  position: relative;
+}
+.work-page .work-card-container .work-card .wc-up-sec .screenshot{
+  width: 30rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+.work-page .work-card-container .work-card  .wc-header{
+  position: absolute;
+  /* background-color: #4a9ea6; */
+  top: -5.6rem;
+  width: 29.2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: .4rem;
+  align-items: center;
+}
+.work-page .work-card-container .work-card .wc-header .site-name{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-right: 4rem;
+}
+.work-page .work-card-container .work-card .wc-header .site-logo-box{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: solid 2px  ;
+  position: relative;
+  
+  margin-left: 1rem;
+} 
+.work-page .work-card-container .work-card .wc-header .site-logo-box .site-logo{
+  width: 3.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec{
+ background-color: var(--main-bk-color) ;
+ height: 74%;
+ clip-path: polygon(50% 24%, 100% 15%, 100% 100%, 0 100%, 0 15%);
+ transform: translateY(-22.65%);
+ color: white;
+ overflow: hidden;
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .dwnBelow-container{
+
+position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20rem;
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .site-text{
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .btns-container{
+display: flex;
+justify-content: center;
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .btns-container > a{
+  padding: 0 1rem;
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .wc-dwnAbove-sec{
+  background-color: rgb(74, 158, 166) ;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(50% 24%, 100% 15%, 100% 100%, 0 100%, 0 15%);
+  transform: translateY(-25%);
+  color: white;
+  position: absolute;
+    bottom: -8.8rem;
+    
+ }
+ 
+ .work-page .work-card-container .work-card .wc-dwnBelow-sec .shadowing{
+   filter: drop-shadow(0px -5px 0px rgb(146, 144, 144));
+   height: 100%;
+   width: 100%;
+   clip-path: polygon(50% 24%, 100% 15%, 100% 100%, 0 100%, 0 15%);
+   transform: translateY(-25%);
+   color: white;
+   position: absolute;
+   bottom: -8.2rem;
+  }
+  .work-page .work-card-container .work-card .wc-dwnBelow-sec  .over{
+    animation: over .5s;
+    bottom: -31rem ;
+    
+  }
+  .work-page .work-card-container .work-card .wc-dwnBelow-sec  .out{
+   animation: out .5s;
+   bottom: -8.2rem
+ }
+  @keyframes over {
+   0%{
+     bottom: -8.2rem;
+   }
+   100%{
+     bottom: -31rem;
+   }
+ }
+ @keyframes out {
+  0%{
+    bottom: -31rem;
+  }
+  100%{
+    bottom: -8.2rem;
+  }
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .shadowing .wc-dwnAbove-sec .languages-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .shadowing .wc-dwnAbove-sec .languages-container .languages-box{
+/* background-color: red; */
+position: absolute;
+width: 70%;
+height: 60%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -30%);
+display: flex;
+justify-content: space-around;
+/* flex-wrap: wrap;
+ */
+ flex-direction: column;
+    align-items: flex-start;
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .shadowing .wc-dwnAbove-sec .languages-container .languages-box .skill-box{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 0 .2rem .5rem;
+  align-items: center;
+  border-bottom: white .6px dashed;
+  
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .shadowing .wc-dwnAbove-sec .languages-container .languages-box .skill-box .icon-box{
+  width: 3rem;
+  height: 3rem;
+  margin-right: .5rem;
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .shadowing .wc-dwnAbove-sec .languages-container .languages-box .skill-box .icon-box #svg-icon{
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .shadowing .wc-dwnAbove-sec .languages-container .languages-box .skill-box .icon-box #svg-icon > svg {
+  width: 3rem;
+  position: absolute;
+  top: 0px;
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .shadowing .wc-dwnAbove-sec .languages-container .languages-box .skill-box .icon-box > div > i {
+  font-size: 3rem;
+  
+}
+.work-page .work-card-container .work-card .wc-dwnBelow-sec .shadowing .wc-dwnAbove-sec .languages-container .languages-box .skill-box > p{
+  font-size: 2.5rem;
+  font-weight: bolder
+}
+
+
+
+
+/*////////////////////work Page////////////////////////////*/
+/*////////////////////work Page////////////////////////////*/
+/*////////////////////work Page////////////////////////////*/
+/*////////////////////Mobile Lan-page////////////////////////////*/
+/*////////////////////Mobile Lan-page////////////////////////////*/
+/*////////////////////Mobile Lan-page////////////////////////////*/
+
+
+@media only screen and (max-width: 414px) and (min-width: 361px) {
+  html{
+    font-size: 35%;
+  }
+} 
+@media only screen and (max-width: 360px) and (min-width: 100px) {
+  html{
+    font-size: 30%;
+  }
+} 
+@media only screen and (max-width: 414px)  {
+  .navbar .Fly-logo-box {
+    animation-delay: 100000000000s;
+  }
+  .navbar .Fly-logo-box .logo{
+    animation-delay: 100000000000s;
+  }
+  .lan-page .learn-mor-box{
+    width: 51rem;
+    height: 52rem;
+    top: 35%;
+    /* animation-name: magicText414; */
+  }
+  @keyframes magicText {
+    0% {
+      top: 84%;
+      width: 0;
+      height: 5rem;
+      box-shadow: none;
+    }
+    8.6% {
+      top: 84%;
+      width: 0;
+      height: 5rem;
+    }
+    40% {
+      top: 84%;
+      width: 51rem;
+      height: 5rem;
+      box-shadow: none;
+    }
+    60% {
+      top: 84%;
+      width: 51rem;
+      height: 5rem;
+      box-shadow: none;
+    }
+    100% {
+      top: 35%;
+      height: 52rem;
+    }
+  }
+ 
+  .lan-page .learn-mor-box .intro-text > span{
+    font-size: 5.7rem ;
+  }
+  .lan-page .learn-mor-box .intro-text .sub-text{
+    font-size: 3.9rem ;
+  }
+  
+}
+@media only screen and (max-width: 920px) and (min-width: 661px) {
+  html{
+    font-size: 45%;
+  }
+  @keyframes Flying {
+    0% {
+      top: 89rem;
+      left: 110%;
+      height: 15rem;
+      width: 13rem;
+      /* transform: rotate(90deg); */
+    }
+    40% {
+      left: 5%;
+      top: 89rem;
+      height: 15rem;
+      width: 13rem;
+      /* transform: rotate(0deg); */
+    }
+    60% {
+      left: 5%;
+      top: 89rem;
+      height: 15rem;
+      width: 13rem;
+      /* transform: rotate(0deg); */
+    }
+    70% {
+      width: 13rem;
+    }
+    90% {
+      top: 3.5rem;
+      width: 13rem;
+    }
+    100% {
+      width: 31rem;
+      /* transform: rotate(0deg); */
+    }
+  }
+}
+@media only screen and (max-width: 660px) and (min-width: 415px) {
+  html{
+    font-size: 40%;
+  }
+  .lan-page .learn-mor-box{
+    height: 35rem;
+  }
+ 
+  @keyframes Flying {
+    0% {
+      top: 101rem;
+      left: 110%;
+      height: 15rem;
+      width: 13rem;
+      /* transform: rotate(90deg); */
+    }
+    40% {
+      left: 5%;
+      top: 101rem;
+      height: 15rem;
+      width: 13rem;
+      /* transform: rotate(0deg); */
+    }
+    60% {
+      left: 5%;
+      top: 101rem;
+      height: 15rem;
+      width: 13rem;
+      /* transform: rotate(0deg); */
+    }
+    70% {
+      width: 13rem;
+    }
+    90% {
+      top: 4.5rem;
+      width: 13rem;
+    }
+    100% {
+      width: 31rem;
+      /* transform: rotate(0deg); */
+    }
+  }
+}
+/*////////////////////Mobile Lan-page////////////////////////////*/
+/*////////////////////Mobile Lan-page////////////////////////////*/
+/*////////////////////Mobile Lan-page////////////////////////////*/
+/*////////////////////Mobile About-page////////////////////////////*/
+/*////////////////////Mobile About-page////////////////////////////*/
+/*////////////////////Mobile About-page////////////////////////////*/
+@media only screen and (max-width: 415px) {
+  .work-page .work-card-container{
+  top: 15%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .about-page .about-page-holder1{
+    width: 60rem;
+    height: 90rem;
+    top: 45%;
+  }
+ .about-page .about-page-holder1 #about-setter{
+    position: relative;
+    width: 43rem;
+    height: 90rem;
+  }
+  .about-page .about-page-holder1  #about-setter{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  #shadow-wraper1{
+    filter: drop-shadow(-4px 1px 6px rgba(240, 238, 238, 0.418));
+    position: relative;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .about-page .about-page-holder1 .left-half {
+    position: relative;
+    width: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  }
+  .about-page .about-page-holder1 .left-half .title-holder{
+    margin-bottom: 1.5rem;
+  }
+  .about-page .about-page-holder1 .left-half .box-text-content{
+    font-size: 2.3rem;
+    padding: 2rem;
+    margin-top: 0rem;
+  }
+  .about-page .about-page-holder1 .rigth-half{
+    position: absolute;
+    width: 57rem;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    bottom: 8.4rem;
+  }
+  .about-page .about-page-holder1 .rigth-half .title-holder{
+    padding-left: 0;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+  }
+  .about-page .about-page-holder1 .rigth-half .box-text-sub{
+    padding: 2rem
+  }
+  .about-page .about-page-holder1 .rigth-half .box-text-sub .icon-container{
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 920px) and (min-width: 661px) {
+
+}
+
+
+/*////////////////////Mobile About-page////////////////////////////*/
+/*////////////////////Mobile About-page////////////////////////////*/
+/*////////////////////Mobile About-page////////////////////////////*/
+/*////////////////////Mobile contact-page////////////////////////////*/
+/*////////////////////Mobile contact-page////////////////////////////*/
+/*////////////////////Mobile contact-page////////////////////////////*/
+@media only screen and (max-width: 661px) {
+ 
+  ::-moz-selection {
+  background-color: transparent;
+  color: white;
+}
+
+::selection {
+  background-color: transparent;
+  color: white;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px transparent;
+  box-shadow: inset 0 0 6px transparent;
+  border-radius: 10px;
+  background-color: transparent
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px transparent;
+  box-shadow: inset 0 0 6px transparent;
+  background-color: transparent;
+}
+}
+
+/*////////////////////Mobile contact-page////////////////////////////*/
+/*////////////////////Mobile contact-page////////////////////////////*/
+/*////////////////////Mobile contact-page////////////////////////////*/
