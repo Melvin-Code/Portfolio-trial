@@ -44,15 +44,7 @@ rendering=()=>{
 
 
 }
-  // handleSubmit = (e) => {
-  //   e.preventDefault();
-  // };
-  // handleChange = (e) => {
-  //   this.setState({
-  //     [e.target.name]: e.target.value,
-  //   });
-  //   console.log("yes");
-  // };
+  /
   render() {
     // console.log(this.state)
     return (
