@@ -44,7 +44,7 @@ rendering=()=>{
 
 
 }
-  /
+  
   render() {
     // console.log(this.state)
     return (
